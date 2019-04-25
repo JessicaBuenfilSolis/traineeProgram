@@ -69,6 +69,7 @@ console.log(teslas.getSpeed());
 console.log(teslas);*/
 
 //----------------- SET PROTOTYPE OF -----------------------
+
 /*var vehicle = {
   driver: "Mary"
 };
@@ -91,11 +92,11 @@ car.drive();
 console.log(car.getSpeed());
 car.stop();
 console.log(car.getSpeed());
-
+console.log(car);
 console.log(Object.getPrototypeOf(car));*/
 
 //------------------ OBJECT CREATE ----------------------
-
+/*
 var vehicle = {
   driver: "Mary"
 };
@@ -118,8 +119,8 @@ console.log(car.getSpeed());
 car.stop();
 console.log(car.getSpeed());*/
 
-//----------------------------------------
-var vehicle2 = {
+//------------------- MIXINS ---------------------
+/*var vehicle2 = {
   driver: "Rubi"
 };
 
@@ -138,8 +139,8 @@ var car2 = {
     return this.speed;
   }
 };
-
-//----------------------------------------
+*/
+//----------------- FUNCTIONAL MIXINS -----------------------
 function asVehicle(target, driver) {
   return {
     ...target,
@@ -166,9 +167,18 @@ function asCar(target, speed) {
 var vehicle3 = asVehicle({}, "Isra");
 var car3 = asCar(vehicle3, 0);
 
-console.log(car3);
-car3.drive();
-console.log(car3.getSpeed());
-car3.stop();
-console.log(car3.getSpeed());
+//console.log(car3);
+//car3.drive();
+//console.log(car3.getSpeed());
+//car3.stop();
+//console.log(car3.getSpeed());
+
 //----------------------------------------
+function hola(prop1) {
+  this.prop1 = prop1;
+}
+
+var hi = new hola("hola");
+
+console.log(hola);
+console.log(hi);

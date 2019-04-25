@@ -1,0 +1,63 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+
+.experienceCard
+    &__container
+        box-sizing: border-box
+        border: solid 1px $border_gray
+        background-color: $background_white
+        padding: $normal_padding
+        
+        &:not(:first-child):not(:last-child)
+            margin: $normal_margin $normal_margin
+        &:first-child
+            margin: 0 $normal_margin $normal_margin $normal_margin
+        &:last-child
+            margin: $normal_margin
+            margin-top: 0
+    
+
+    &__title
+        color: $text_color
+        font-family: $text_font
+        margin-top: 0
+        margin-bottom: 0.5rem
+
+    &__text
+        color: $text_color
+        font-family: $text_font
+        margin-top: 0
+        margin-bottom: 0.5rem
+    
+    &__date
+        color: $border_gray
+        font-family: $text_font
+        margin-top: 0
+        margin-bottom: 0.5rem
+    
+    &__info
+        color: $border_green
+        font-family: $text_font
+        text-decoration-line: none
+
+/**
+ * Tablet Styles
+ */
+@media screen and (min-width: $tablet_width)
+    .experienceCard
+        display: flex
+        justify-content: space-evenly
+        vertical-align: top
+
+        &__container
+            width: 30%
+            box-sizing: border-box
+            &:not(:first-child):not(:last-child)
+                margin: $normal_margin
+            &:first-child
+                margin: $normal_margin 
+            &:last-child
+                margin: $normal_margin
+                margin-bottom: $normal_margin
+        
