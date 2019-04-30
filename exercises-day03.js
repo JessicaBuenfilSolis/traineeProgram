@@ -1,3 +1,5 @@
+//FUNCTIONS AS CONSTRUCTORS
+
 /*function Vehicle(driver) {
   this.driver = driver;
 }
@@ -12,7 +14,7 @@ function Car(driver) {
 }
 
 var teslas = new Car("Vane");
-//console.log(teslas); // Car { driver: 'Vane', speed: 0 }
+console.log(teslas); // Car { driver: 'Vane', speed: 0 }
 
 //----------------------------------------
 Car.prototype.stop = function() {
@@ -27,25 +29,26 @@ Car.prototype.getSpeed = function() {
   return this.speed;
 };
 
+console.log(Car.prototype)
 teslas.drive.apply(teslas);
 console.log(teslas.getSpeed());
 teslas.stop.apply(teslas);
 console.log(teslas.getSpeed());*/
 
-//----------------------------------------
-/*class Vehicle {
+//---------------------------------------- CLASS
+class Vehicle {
   constructor(driver) {
     this.driver = driver;
   }
 }
 
-var vehicle = new Vehicle("driver");*/
+var vehicle = new Vehicle("driver");
 //console.log(vehicle);
 //----------------------------------------
-/*class Car extends Vehicle {
+class Car extends Vehicle {
   constructor(driver) {
-    super(driver);
-    this.speed = 0;
+    super(driver); //call parent function
+    this.speed = 5;
   }
 
   drive() {
@@ -66,7 +69,7 @@ console.log(teslas.getSpeed());
 teslas.stop.apply(teslas);
 console.log(teslas.getSpeed());
 
-console.log(teslas);*/
+console.log('t',teslas);
 
 //----------------- SET PROTOTYPE OF -----------------------
 
@@ -96,8 +99,7 @@ console.log(car);
 console.log(Object.getPrototypeOf(car));*/
 
 //------------------ OBJECT CREATE ----------------------
-/*
-var vehicle = {
+/*var vehicle = {
   driver: "Mary"
 };
 
@@ -113,7 +115,8 @@ car.getSpeed = function() {
   return this.speed;
 };
 
-/*console.log(car);
+console.log(car);
+console.log(Object.getPrototypeOf(car))
 car.drive();
 console.log(car.getSpeed());
 car.stop();

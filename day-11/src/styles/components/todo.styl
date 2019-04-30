@@ -1,0 +1,59 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+
+.todo
+
+  &__container
+        background-color: $background_gray
+        box-sizing: border-box
+        padding: $normal_padding
+        margin: $normal_margin
+        
+        //&:not(:first-child):not(:last-child)
+        //    margin: $normal_margin $normal_margin
+        //&:first-child
+        //    margin: 0 $normal_margin $normal_margin $normal_margin
+        //&:last-child
+        //    margin: 0 $normal_margin
+
+  &__name
+    color: $text_color
+    font-family: $text_font
+    font-size: 1.2rem
+    font-weight: bold
+    margin: 0
+
+  &__text
+    color: $text_color
+    font-family: $text_font
+    font-size: 1rem
+    padding: .5$normal_padding
+
+  &__info
+      background-color: $circle_purple
+      width: 100%
+      border-color: $circle_purple
+      border-style: solid
+      font-family: $text_font
+      color: $background_white
+      padding: $normal_padding
+  
+/**
+ * Tablet Styles
+ */
+//@media screen and (min-width: $tablet_width)
+//    .todo
+//        display: flex
+//        justify-content: space-evenly
+//        vertical-align: middle
+//
+//        &__container
+//            width: 30%
+//            box-sizing: border-box
+//            &:not(:first-child):not(:last-child)
+//                margin: $normal_margin
+//            &:first-child
+//                margin: $normal_margin 
+//            &:last-child
+//                margin: $normal_margin

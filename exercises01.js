@@ -48,7 +48,7 @@ function logArray(array = []) {
 
 logArray([1, 2, 3, 4, 5]);
 
-//===============================
+//=============================== Function as constructor
 
 function Car(brand, model, year) {
   this.brand = brand;
