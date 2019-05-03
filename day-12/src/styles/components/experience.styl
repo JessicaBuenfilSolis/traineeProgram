@@ -18,16 +18,25 @@
         background-color: $background_white
         padding: $normal_padding
         margin-top: $normal_margin
+        text-align: left 
     
     &__cardLogo
-        width: 100%
+        display: inline-block
+        width: 30%
+        vertical-align: top
+    
+    &__text_container
+        display: inline-block;
+        width: 70%
+        vertical-align: top
+        font-weight: normal
     
     &__card_company
         color: $main_blue
         font-family: $text_font
         margin: .5rem
         margin-top: 0
-    
+        
     &__card_date
         color: $border_gray
         font-family: $text_font
@@ -41,6 +50,7 @@
         color: $border_gray
         font-family: $text_font
         margin: $normal_margin 0
+        font-weight: normal
     
     &__more_info
         color: $blue
