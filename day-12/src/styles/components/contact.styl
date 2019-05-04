@@ -1,0 +1,52 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+
+.contact
+    border-top: solid 0.375rem $border_green
+    background-color: $main_blue
+    padding: $normal_padding
+
+    &__title
+        color: $white_text
+        text-align: center
+        font-family: $text_font
+        margin-top: $normal_margin
+
+    &__card
+        box-sizing: border-box
+        margin-top: $normal_margin
+        text-align: center
+    
+    &__card_logo
+        width: 30%
+        margin: 0 auto
+
+    &__email_box
+        box-sizing: border-box
+        border: solid 1px $background_white
+        padding: $normal_padding
+        margin: $normal_margin
+        margin-top: $double_margin
+
+    &__email_text
+        font-family: $text_font
+        color: $white_text
+        margin: 0
+        text-align: left
+    
+    &__message_box
+        box-sizing: border-box
+        border: solid 1px $background_white
+        padding: $normal_padding
+        margin: $normal_margin
+        height : 7rem
+
+    &__send_info
+        color: $white_text
+        font-family: $text_font
+        background-color: $blue
+        border: solid 1px $blue
+        border-radius: 5%
+        padding: .7rem $double_padding
+        font-weight: bold

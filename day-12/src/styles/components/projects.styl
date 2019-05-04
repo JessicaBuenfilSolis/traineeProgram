@@ -1,0 +1,49 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+
+.projects
+    background-color: $background_white
+    padding: $normal_padding
+
+    &__title
+        color: $main_blue
+        text-align: center
+        font-family: $text_font
+        margin 0
+
+    &__card
+        box-sizing: border-box
+        box-shadow: 1px 1px 7px gray
+        background-color: $background_white
+        margin-top: $normal_margin
+    
+    &__appName
+        box-sizing: border-box
+        background-color: $main_blue
+        color: $white_text
+        font-family: $text_font
+        margin: 0
+        padding: $normal_padding
+
+    &__card_logo
+        width: 100%
+
+    
+    &__job_container
+        padding: $normal_padding
+        text-align: center
+
+    &__job_description
+        color: $border_gray
+        font-family: $text_font
+        margin: $normal_margin 0
+    
+    &__more_info
+        color: $white_text
+        font-family: $text_font
+        background-color: $blue
+        border: solid 1px $blue
+        border-radius: 5%
+        padding: .7rem $normal_padding
+        font-weight: bold
