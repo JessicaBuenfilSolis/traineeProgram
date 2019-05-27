@@ -1,0 +1,25 @@
+.list_container {
+  background-color: rgba(84, 240, 136, 0.87);
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  box-sizing: content-box;
+  width: 20%;
+  padding: 16px;
+}
+
+.planet {
+  background-color: rgba(241, 239, 101, 0.993);
+  width: 60%;
+  margin-bottom: 4px;
+  justify-content: center;
+}
+
+.negative_text {
+  font-weight: bold;
+  color: rgba(233, 8, 8, 0.993);
+  text-align: center;
+}
